@@ -1,0 +1,92 @@
+/* Start Variables */
+:root {
+    /* Colors */
+    /* Primary */
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+    /* Neutral */
+    --white: #fff;
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white-two: hsla(0, 0%, 100%, 0.6);
+    /* PXs */
+    --main-border-radius: 2%;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--Very-dark-blue);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    font-size: 15px;
+}
+/* End Global Rules */
+/* Start Body */
+.box {
+    background-color: var(--Dark-desaturated-blue);
+    width: 790px;
+    height: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: var(--main-border-radius);
+    overflow: hidden;
+}
+.box .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100%;
+    color: var(--white);
+    padding: 0 60px;
+}
+.box .content h2 span {
+    color: var(--Soft-violet);
+}
+.box .content > p {
+    color: var(--Slightly-transparent-white);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+}
+.box .content .stats {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -15px;
+}
+.box .content .stats p {
+    font-size: 20px;
+    margin-right: 35px;
+}
+.box .content .stats p span {
+    font-size: 13px;
+    color: var(--Slightly-transparent-white);
+    font-family: 'Inter', sans-serif;
+}
+.box img {
+    height: 321px;
+    border-top-right-radius: var(--main-border-radius);
+    border-bottom-right-radius: var(--main-border-radius);
+}
+.attribution {
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+}
+/* End Body */
